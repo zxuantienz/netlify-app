@@ -2,16 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giới thiệu về tôi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>WELCOME TO MY WEBSITE</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <p>Repellat reiciendis ducimus, expedita iste fuga eum laboriosam facere laborum, perspiciatis qui facilis repudiandae assumenda ab, dolorum vel.</p>
+
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#kinhnghiem">Kinh nghiệm</a>
+        <a href="#kynang">Kỹ năng</a>
+        <a href="#lienhe">Liên hệ</a>
     </div>
+
+    <span id="nav" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="main-content">
+        <section id="gioithieu">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Tôi là Đoàn Xuân Tiến.</p>
+        </section>
+        <p>Mssv 2374802010493</p>
+        </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mysidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mysidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
